@@ -4,6 +4,9 @@
     --max-width-container: 1200px;
     --text-color-menu: #FC077D;
     --bg-color-hover: #fc077d73;
+    --black-alpha-color: rgba(75, 73, 73, 0.5);
+    --white-alpha-color: rgba(255, 255, 255, 0.5);
+    --gray-dark-color: #666666;
 }
 /* Reset */
 html {
@@ -130,31 +133,136 @@ img {
         text-align: center;
     }
     
-    .panel .menu a:hover {
+    /* .panel .menu a:hover {
         color: none;
         background-color: none;
-    }
+    } */
     
 }
 
+/* ------------------------------------- */
+
+/* ------------- Hero Image ------------ */
+
+.hero-image {
+    background-image: var(--hero-image);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: var(--hero-attachment);
+}
+
+.hero-image-opacity {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--hero-opacity-color);
+}
+
+/* ------------------------------------- */
+
+/* --------- carousel --------- */
+
+@keyframes carousel-slide {
+    0% {
+        transform: translateX(0%);
+    }
+    
+    25% {
+        transform: translateX(-25%);
+    }
+    
+    50% {
+        transform: translateX(-50%);
+    }
+    
+    75% {
+        transform: translateX(-75%);
+    }
+}
 
 
+.carousel {
+    margin: 2rem auto;
+    padding: 2rem 0;
+    max-width: 800px;
+    text-align: center;
+    background-color: var(--carousel-bg-color);
+    overflow-x: hidden;
+}
+
+.carousel .slides {
+    /* 100% por cada slide */
+    width: 300%;
+    padding-left: 0;
+    display: flex;
+    list-style: none;
+    transition: transform .5s ease-in-out;
+    animation: carousel-slide 12s ease-in-out 3s;
+
+}
+
+.slides img {
+    width: 100%;
+}
+
+.carousel input {
+    display: none;
+}
+
+.carousel label {
+    border: thin solid var(--text-color-menu);
+    border-radius: 50%;
+    display: inline-block;
+    width: 0.75rem;
+    height: 0.75rem;
+    margin: 0 .25rem;
+    cursor: pointer;
+}
+
+#slide-1:checked ~ .slides {
+    transform: translateX(0%);
+}
+
+#slide-2:checked ~ .slides {
+    transform: translateX(-25%);
+}
+
+#slide-3:checked ~ .slides {
+    transform: translateX(-50%);
+}
+
+#slide-4:checked ~ .slides {
+    transform: translateX(-75%);
+}
+
+#slide-1:checked ~ .slides-nav label#dot-1,
+#slide-2:checked ~ .slides-nav label#dot-2,
+#slide-3:checked ~ .slides-nav label#dot-3,
+#slide-4:checked ~ .slides-nav label#dot-4 {
+    background-color: var(--text-color-menu);
+}
 
 
+/* ------------------------------------- */
 
 
-
-
-
-
-
-
-
-
-
-
+/* ------------------------------------------- */
 
 /* Utilities */
+
+.section-title {
+    
+    border-bottom: medium solid var(--text-color-menu);
+    margin: 2rem auto;
+    padding: 0.5rem 1rem;
+    width: 250px;
+    text-align: center;
+    color: var(--text-color-menu)
+}
 
 
 .active-panel {
