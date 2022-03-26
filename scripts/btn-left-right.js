@@ -5,17 +5,50 @@
     const $btnArrowRight = d.querySelector(".btn-arrow-right");
     const $carouselCards = d.querySelector(".services .carousel-cards");
 
+
     let count = 0;
-    console.log($carouselCards);
-    
+    const arr = [0, 1, 2]; 
+
     $btnArrowLeft.addEventListener("click", e => {
-        console.log($btnArrowLeft);
-        $carouselCards.classList.add("move-left");
+        const mvLeft = 100;
+        // console.log($btnArrowLeft);
+        // $carouselCards.classList.add("move-left");
+        
+        console.log(count);
+        if(count < 200) {
+            count += mvLeft;
+            let translate = `translateX(-${count}%)`;
+            $carouselCards.style.setProperty("transform", translate);
+            $carouselCards.style.transition = "transform .5s ease-in-out";
+            
+            $btnArrowRight.classList.remove("opacity");
+            if(count === 200){
+                $btnArrowLeft.classList.add("opacity");
+            }
+            // console.log($carouselCards.style);
+        }
 
     });
     
     $btnArrowRight.addEventListener("click", e => {
-        console.log($btnArrowRight);
+        const mvRight = 100;
+        // console.log($btnArrowRight);
+
+        console.log(count);
+
+        if(count >0 ){
+            count -= mvRight;
+            let translate = `translateX(-${count}%)`;
+            $carouselCards.style.setProperty("transform", translate);
+            $carouselCards.style.transition = "transform .5s ease-in-out";
+
+            $btnArrowLeft.classList.remove("opacity");
+            if(count === 0){
+                $btnArrowRight.classList.add("opacity");
+            }
+        }
+        
+
 
 
     });

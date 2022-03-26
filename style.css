@@ -288,6 +288,11 @@ img {
     display: none;
 }
 
+
+.opacity {
+    opacity: 0;
+    pointer-events: none;
+}
 /* styles site */
 
 /* Estilos de la seccion de servicios */
@@ -355,8 +360,6 @@ img {
 .services .card {
     width: 100%;
 }
-
-
 
 
 
