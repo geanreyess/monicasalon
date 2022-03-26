@@ -287,4 +287,124 @@ img {
 .none {
     display: none;
 }
+
 /* styles site */
+
+/* Estilos de la seccion de servicios */
+
+.services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services .relative-container {
+    position: relative;
+    width: 100%;
+}
+
+.services .carousel-container {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: hidden;
+   
+}
+
+
+.services .btn-arrow-left,
+.services .btn-arrow-right {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FC077D;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: thin solid black;
+    z-index: 100;
+    cursor: pointer;
+}
+
+
+.services .btn-arrow-left {
+    top: calc(50% - 20px);
+    left: calc(10% - 10px);
+}
+
+.services .btn-arrow-right {
+    top: calc(50% - 20px);
+    right: calc(10% - 10px);
+}
+
+.btn-arrow-left svg,
+.btn-arrow-right svg {
+    width: 50%;
+}
+
+
+.services .carousel-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 100%);
+    justify-items: center;
+    z-index: 10;
+
+}
+
+.services .card {
+    width: 100%;
+}
+
+
+
+
+
+
+/* modificar */
+.move-left {
+    transition: transform .5s ease-in-out;
+    transform: translateX(-100%)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
