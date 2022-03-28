@@ -7,6 +7,7 @@
     --black-alpha-color: rgba(75, 73, 73, 0.5);
     --white-alpha-color: rgba(255, 255, 255, 0.5);
     --gray-dark-color: #666666;
+    --white-text: #fff;
 }
 /* Reset */
 html {
@@ -252,9 +253,9 @@ img {
 /* Utilities */
 
 .section-title {
-    display: none;
+    /* display: none; */
     border-bottom: medium solid var(--text-color-menu);
-    margin: 2rem auto;
+    margin: 1rem auto;
     padding: 0.5rem 1rem;
     width: 250px;
     text-align: center;
@@ -293,6 +294,12 @@ img {
     opacity: 0;
     pointer-events: none;
 }
+
+.bg-top-row {
+    background-color: rgba(52, 3, 45, 0.3);
+    /* backdrop-filter: blur(.4rem); */
+}
+
 /* styles site */
 
 /* Estilos de la seccion de servicios */
@@ -301,7 +308,9 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
 }
+
 
 .services .relative-container {
     position: relative;
@@ -359,6 +368,46 @@ img {
 
 .services .card {
     width: 100%;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 1rem rgba(0,0,0, 0.2);
+    display: flex;
+    flex-direction: column;
+    margin: 0 1.5rem;
+    overflow: hidden;
+    /* backdrop-filter: blur(1rem); */
+    background-color: rgba(255, 255, 255, 0.060);
+    border: .1rem solid rgba(255, 255, 255, 0.18);
+    color: var(--white-text);
+}
+
+.card h3 {
+    letter-spacing: .1rem;
+    margin: 0 0 1rem 0;
+}
+
+.card .content {
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.content p {
+    font-size: 1rem;
+}
+
+.services .button {
+    border-radius: 3rem;
+    color: var(--white-text);
+    font-size: .8rem;
+    padding: .5rem .3rem;
+    letter-spacing: .1rem;
+    align-self: flex-end;
+    border: .1rem solid rgba(255, 255, 255, 0.18) ;
+
+
 }
 
 
