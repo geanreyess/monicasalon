@@ -361,7 +361,7 @@ img {
 
 .services .carousel-cards {
     display: grid;
-    grid-template-columns: repeat(3, 100%);
+    grid-template-columns: repeat(6, 100%);
     justify-items: center;
     z-index: 10;
 

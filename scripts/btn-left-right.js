@@ -7,22 +7,22 @@
 
 
     let count = 0;
-    const arr = [0, 1, 2]; 
+    const arr = [1, 2, 3, 4, 5, 6]; // Numero de cards.
 
     $btnArrowLeft.addEventListener("click", e => {
         const mvLeft = 100;
         // console.log($btnArrowLeft);
         // $carouselCards.classList.add("move-left");
         
-        console.log(count);
-        if(count < 200) {
+        console.log(arr.length);
+        if(count < ((arr.length - 1) * 100)) {
             count += mvLeft;
             let translate = `translateX(-${count}%)`;
             $carouselCards.style.setProperty("transform", translate);
             $carouselCards.style.transition = "transform .5s ease-in-out";
             
             $btnArrowRight.classList.remove("opacity");
-            if(count === 200){
+            if(count === ((arr.length - 1) * 100)){
                 $btnArrowLeft.classList.add("opacity");
             }
             // console.log($carouselCards.style);
