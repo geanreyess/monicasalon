@@ -12,7 +12,7 @@
     $btnArrowLeft.addEventListener("click", e => {
         const mvLeft = 100;
         // console.log($btnArrowLeft);
-        // $carouselCards.classList.add("move-left");
+        
         
         console.log(arr.length);
         if(count < ((arr.length - 1) * 100)) {

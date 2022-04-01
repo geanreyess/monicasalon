@@ -247,6 +247,55 @@ img {
 
 /* ------------------------------------- */
 
+/* Control de cantidades */
+.quantity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: .5rem;
+}
+
+.quantity .button-down,
+.quantity .button-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    padding: .5rem;
+    border-radius: .2rem;
+    background-color: #FC077D;
+    cursor: pointer;
+} 
+
+.quantity .number {
+    width: 100%;
+    height: 40px;
+    padding: .2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    outline: none;
+    border: thin solid var(--gray-dark-color);
+}
+
+/* le quita los botones del input:number */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] { -moz-appearance:textfield; }
+
+
+
+
+
+
+
+
+
 
 /* ------------------------------------------- */
 
@@ -310,6 +359,7 @@ img {
     justify-content: center;
     align-items: center;
     background-image: linear-gradient(to right, #434343 0%, black 100%);
+    padding-bottom: 1rem; 
 }
 
 
@@ -411,13 +461,13 @@ img {
 }
 
 
+/* Estilos de la seccion de los productos */
 
 
-/* modificar */
-.move-left {
-    transition: transform .5s ease-in-out;
-    transform: translateX(-100%)
-}
+
+
+
+
 
 
 
