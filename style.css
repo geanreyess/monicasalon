@@ -406,7 +406,8 @@ img {
     padding: .5rem .3rem;
     letter-spacing: .1rem;
     align-self: flex-end;
-    border: .1rem solid rgba(255, 255, 255, 0.18) ;
+    /* border: .1rem solid rgba(255, 255, 255, 0.18) ; */
+    border: thin solid var(--text-color-menu) ;
 }
 
 
