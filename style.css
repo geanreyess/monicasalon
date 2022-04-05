@@ -20,6 +20,7 @@ html {
 body {
     margin: 0;
     position: relative;
+    /* overflow-x: hidden; */
     
 }
 
@@ -465,6 +466,7 @@ input[type="number"] { -moz-appearance:textfield; }
 /* Estilos de la seccion de los productos */
 .store {
     padding: 0 1rem;
+    padding-bottom: 1rem;
 }
 
 .store .products-container {
@@ -522,6 +524,109 @@ input[type="number"] { -moz-appearance:textfield; }
     width: 30px;
     fill: var(--text-color-menu);
 }
+
+/* Estilos de la seccion Mis clientes dicen */
+
+.recomendaciones {
+    padding-bottom: 1rem;
+}
+
+.recomendaciones .hero-image-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.recomendaciones .rec-carousel {
+    width: 100%;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    max-width: 800px;
+    padding: .5rem;
+    text-align: center;
+    background-color: var(--carousel-bg-color);
+    overflow-x: hidden;
+}
+
+.recomendaciones img {
+    border: medium solid var(--text-color-menu);
+    border-radius: 100%;
+}
+
+.recomendaciones p::before,
+.recomendaciones p::after {
+    content: '"';
+    font-size: 1.3rem;
+}
+
+.recomendaciones .container-slides {
+    display: grid;
+    justify-items: center;
+    /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+    grid-template-columns: repeat(5, 100%);
+    /* column-gap: .8rem; */
+    animation: client-move 20s ease-out  3s infinite;
+}
+
+@keyframes client-move {
+    0% {
+        transform: translateX(0%);
+    }
+
+    25% {
+        transform: translateX(-100%);
+    }
+    
+    50% {
+        transform: translateX(-200%);
+    }
+
+    75% {
+        transform: translateX(-300%);
+    }
+
+    100% {
+        transform: translateX(-400%);
+    }
+    
+
+}
+
+.recomendaciones .slide {
+    width: 100%;
+    max-width: 320px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.help {
+    height: 200vh;
+}
+
 
 
 
