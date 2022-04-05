@@ -5,6 +5,7 @@
     --text-color-menu: #FC077D;
     --bg-color-hover: #fc077d73;
     --black-alpha-color: rgba(75, 73, 73, 0.5);
+    --very-black-alpha-color: rgba(26, 25, 25, 0.5);
     --white-alpha-color: rgba(255, 255, 255, 0.5);
     --gray-dark-color: #666666;
     --white-text: #fff;
@@ -175,11 +176,11 @@ img {
         transform: translateX(0%);
     }
     
-    25% {
+    50% {
         transform: translateX(-100%);
     }
     
-    50% {
+    100% {
         transform: translateX(-200%);
     }
 }
@@ -528,7 +529,7 @@ input[type="number"] { -moz-appearance:textfield; }
 /* Estilos de la seccion Mis clientes dicen */
 
 .recomendaciones {
-    padding-bottom: 1rem;
+    /* padding-bottom: 1rem; */
 }
 
 .recomendaciones .hero-image-content {
@@ -600,37 +601,92 @@ input[type="number"] { -moz-appearance:textfield; }
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Preguntas frecuentes */
 
 .help {
-    height: 200vh;
+    /* height: 200vh; */
+    background-image: var(--bg-gradient);
+    padding: 1rem;
 }
 
+.help section {
+    width: 100%;
+    /* height: 100vh; */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.help .accordion-item {
+    border-radius: .4rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    box-shadow: .5rem 2px .5rem rgba(0,0,0, 0.1);
+    background-color: #434343;
+    /* border-top: thin solid var(--text-color-menu); */
+    /* border-bottom: thin solid var(--text-color-menu); */
+}
 
+.help .accordion-link {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255);
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    
+}
 
+.help .accordion-link ion-icon {
+    color: #FC077D;
+    padding: .5rem;
+    font-weight: bold;
+}
 
+.help .accordion-link ion-icon[name="remove-outline"] {
+    display: none;
+}
+
+.help .answer {
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    background-color: #11101094;
+    transition: max-height .6s;
+}
+
+.help .answer::before {
+    content: "";
+    position: absolute;
+    width: .3rem;
+    height: 90%;
+    background-color: var(--text-color-menu);
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.help .answer p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1rem;
+    padding: 1.2rem;
+}
+
+.help .accordion-item:target .answer {
+    max-height: 20rem;
+}
+
+.help .accordion-item:target .accordion-link ion-icon[name="add-outline"] {
+    display: none;
+}
+
+.help .accordion-item:target .accordion-link ion-icon[name="remove-outline"] {
+    display: block;
+}
 
 
 
