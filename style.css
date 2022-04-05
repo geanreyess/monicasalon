@@ -643,11 +643,11 @@ input[type="number"] { -moz-appearance:textfield; }
 
 .help .accordion-link ion-icon {
     color: #FC077D;
-    padding: .5rem;
-    font-weight: bold;
+    padding: .3rem;
+    /* font-weight: bold; */
 }
 
-.help .accordion-link ion-icon[name="remove-outline"] {
+.help .accordion-link ion-icon[name="caret-up-outline"] {
     display: none;
 }
 
@@ -680,11 +680,11 @@ input[type="number"] { -moz-appearance:textfield; }
     max-height: 20rem;
 }
 
-.help .accordion-item:target .accordion-link ion-icon[name="add-outline"] {
+.help .accordion-item:target .accordion-link ion-icon[name="caret-down-outline"] {
     display: none;
 }
 
-.help .accordion-item:target .accordion-link ion-icon[name="remove-outline"] {
+.help .accordion-item:target .accordion-link ion-icon[name="caret-up-outline"] {
     display: block;
 }
 
