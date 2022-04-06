@@ -434,6 +434,30 @@ input[type="number"] { -moz-appearance:textfield; }
     color: var(--white-text);
 }
 
+@media screen  and (min-width: 768px ) {
+    .services .carousel-cards {
+        grid-template-columns: repeat(6, 50%);
+        
+    }
+    
+    .services .card {
+        width: 90%;
+    }
+}
+
+@media screen  and (min-width: 1024px ) {
+    .services .carousel-cards {
+        grid-template-columns: repeat(6, 33.33%);
+        
+    }
+    
+    .services .card {
+        width: 90%;
+    }
+}
+
+
+
 .card h3 {
     letter-spacing: .1rem;
     margin: 0 0 1rem 0;
@@ -731,12 +755,14 @@ input[type="number"] { -moz-appearance:textfield; }
     border-left: thin solid var(--text-color-menu);
     font-weight: bold;
     color: #666666;
+    cursor: pointer;
 }
 
 .suscription-content form input {
     width: 250px;
     outline: none;
     padding: 2px;
+    padding-left: 5px;
     font-size: 1rem;
 }
 
