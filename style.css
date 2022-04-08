@@ -294,9 +294,61 @@ input[type="number"] { -moz-appearance:textfield; }
 
 /* ------------------------------------------- */
 
+/* Boton resetvar cita */
 
+/* -------------------- */
+body .none-reservation {
+    display: none;
+}
 
+body .reservation-content {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: rgba(24, 24, 24, 0.938);
+    border: medium solid #FC077D;
+    border-radius: 100%;
+    z-index: 999;
+    animation: pulso 2s ease-out infinite;
+}
 
+@keyframes pulso {
+    0% {
+        transform: scale(.8);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(.8);
+    } 
+}
+
+.reservation-content ion-icon[name="calendar-number-outline"] {
+    width: 40px;
+    height: 40px;
+    color: #FC077D;
+
+}
+
+.reservation-content .text {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: -125px;
+    background-color: #FC077D;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 13px;
+    border-radius: 20px;
+}
 
 
 
