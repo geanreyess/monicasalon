@@ -4,4 +4,5 @@
     setTimeout(() => {
         $reservation.classList.remove("none-reservation");
     }, 60000);
+
 })(document);
