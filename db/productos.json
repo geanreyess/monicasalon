@@ -1,0 +1,18 @@
+[
+    {
+        "code": "001",
+        "name": "Tinte Italy Colors",
+        "stock": "4",
+        "sale-price": "18",
+        "path-image": "assets/productos/tintes-italy.jpg"
+    },
+    {
+        "code": "002",
+        "name": "Cera para cabello",
+        "stock": "4",
+        "sale-price": "18",
+        "path-image": "assets/productos/tintes-italy.jpg"
+    }
+    
+
+]
