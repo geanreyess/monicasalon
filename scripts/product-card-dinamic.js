@@ -57,9 +57,9 @@ function quantityMultiple() {
 
     
 
-    fetch("../db/productos.json")
+    fetch("./db/productos.json")
         .then(res => {
-            // console.log(res);
+            console.log(res);
             // console.log(res.json());
             return res.ok ? res.json(): Promise.reject(res);
         })
