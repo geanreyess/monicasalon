@@ -52,6 +52,7 @@ function quantityMultiple() {
     const $productsContainer = d.querySelector(".products-container");
     const $templateProductCard = d.getElementById("template-product-card").content;
     const $fragment = d.createDocumentFragment();
+    const $loader = d.querySelector(".loader-container");
 
     // Aca ira el codigo para obtener los datos que llenaran las procuts-cards.
 
@@ -88,7 +89,7 @@ function quantityMultiple() {
             // asigancion de la quantity multiple;
             quantityMultiple();
         
-            
+            $loader.classList.add("none");
         })
         .catch(err => {
             // console.log(err);
@@ -98,6 +99,7 @@ function quantityMultiple() {
         })
         .finally(() => {
             // console.log("Esto se ejecutara independientemente del resultado de la Promesa Fetch");
+            
         })
         
 
