@@ -9,11 +9,11 @@
     $inputList.forEach(el => {
         let $element = el.querySelector(".number");
         $element.value = 0;
-        console.log($element);
+        // console.log($element);
 
 
         el.addEventListener("click", e => {
-            console.log(e.target);
+            // console.log(e.target);
             if(e.target.matches(".quantity .button-down") || e.target.matches(".quantity .button-down svg") || e.target.matches(".quantity .button-down path")){
                 // console.log("Se presiono el bton nde abajo")
                 let count = $element.value;

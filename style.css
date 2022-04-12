@@ -1,9 +1,9 @@
 /* Custom Properties */
 :root {
     /* --primary-color: #FC077D; */
-    --primary-color: rgb(206, 167, 11);
+    --primary-color: #FFD700;
     /* --bg-color-hover: #fc077d73; */
-    --bg-color-hover: rgba(206, 167, 11, 0.644);
+    --bg-color-hover: #ffd900a9;
     --bg-header: #181818;
     --max-width-container: 1200px;
     --black-alpha-color: rgba(75, 73, 73, 0.5);

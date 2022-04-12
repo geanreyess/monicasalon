@@ -14,7 +14,7 @@
         arr = [1, 2]; // Numero de cards.
     }
     
-    console.log(window.innerWidth)
+    // console.log(window.innerWidth)
     let count = 0;
 
     $btnArrowRight.addEventListener("click", e => {
@@ -31,7 +31,7 @@
         // console.log($btnArrowLeft);
         
         
-        console.log(arr.length);
+        // console.log(arr.length);
         if(count < ((arr.length - 1) * 100)) {
             count += mvRight;
             let translate = `translateX(-${count}%)`;
@@ -60,7 +60,7 @@
         const mvLeft = 100;
         // console.log($btnArrowRight);
 
-        console.log(count);
+        // console.log(count);
 
         if(count >0 ){
             count -= mvLeft;
