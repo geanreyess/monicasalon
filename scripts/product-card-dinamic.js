@@ -5,6 +5,21 @@
 
     // Aca ira el codigo para obtener los datos que llenaran las procuts-cards.
 
+    fetch()
+        .then(res => {
+            console.log(res);
+        })
+        .catch(err => {
+            console.log(err);
+        })
+        .finally(() => {
+            console.log("Esto se ejecutara independientemente del resultado de la Promesa Fetch");
+        })
+        
+
+
+
+
     let response = [
         
         {
