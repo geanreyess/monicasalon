@@ -713,8 +713,33 @@ body .reservation-content {
     justify-content: center;
     align-items: center;
 }
+
+.product-card .content img {
+    height: 320px;
+}
+
+.product-card .content .price {
+    display: inline-block;
+    background-color: #181818;
+    color: white;
+    padding: 0 10px;
+    border-radius: 10px;
+}
+
+.product-card .content .stock::before {
+    content: "✔️";
+    margin-right: 10px;
+}
+
+.product-card .content .stock {
+    color: #028532;
+    font-weight: bold;
+    margin: 1px 0;
+}
+
+
 .product-card p {
-    width: 100%;
+    /* width: 100%; */
     text-align: center;
     font-size: 1.1rem;
 }

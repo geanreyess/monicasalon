@@ -1,31 +1,31 @@
 [
     {
         "code": "001",
-        "name": "Tinte Italy Colors",
-        "stock": 4,
-        "salePrice": 50,
-        "pathImage": "assets/productos/tintes-italy.jpg"
+        "name": "Linea Post Color Hanna",
+        "stock": 8,
+        "salePrice": 140,
+        "pathImage": "assets/productos/linea-post-color-hanna.jpeg"
     },
     {
         "code": "002",
-        "name": "Cera para cabello",
-        "stock": 3,
-        "salePrice": 75,
-        "pathImage": "assets/productos/tintes-italy.jpg"
+        "name": "Oleo Elixir Hanna",
+        "stock": 10,
+        "salePrice": 40,
+        "pathImage": "assets/productos/oleo-elixir-hanna.jpeg"
     },
     {
         "code": "003",
-        "name": "Aceite de argan",
-        "stock": 10,
-        "salePrice": 45,
-        "pathImage": "assets/productos/tintes-italy.jpg"
+        "name": "Shampoo Matizador Hanna",
+        "stock": 8,
+        "salePrice": 48,
+        "pathImage": "assets/productos/shampoo-matizador-hanna.jpeg"
     },
     {
         "code": "004",
-        "name": "Shampoo HANA",
-        "stock": 2,
-        "salePrice": 60,
-        "pathImage": "assets/productos/tintes-italy.jpg"
+        "name": "Tonico Capilar Intensivo Hanna",
+        "stock": 6,
+        "salePrice": 55,
+        "pathImage": "assets/productos/tonico-capilar-intensivo-hanna.jpeg"
     }
     
 

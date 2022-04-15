@@ -6,7 +6,7 @@ function quantityMultiple() {
         let $stock = Number(el.querySelector(".stock").getAttribute("data-stock"));
         // console.log($stock);
         let $element = el.querySelector(".quantity .number");
-        $element.value = 0;
+        $element.value = 1;
         // console.log($element);
 
 
@@ -75,7 +75,7 @@ function quantityMultiple() {
                 $templateProductCard.querySelector(".name-product").textContent = el.name;
                 $templateProductCard.querySelector("img").setAttribute("src", el.pathImage);
                 $templateProductCard.querySelector("img").setAttribute("alt", el.name);
-                $templateProductCard.querySelector(".stock").textContent = `Stock: ${el.stock} und`;
+                $templateProductCard.querySelector(".stock").textContent = `${el.stock} disponibles`;
                 $templateProductCard.querySelector(".stock").setAttribute("data-stock", el.stock);
                 $templateProductCard.querySelector(".price").textContent = ` S/. ${el.salePrice}`;
 
